@@ -14,7 +14,7 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task0.V22
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            Application.EnableVisualStyles(); 
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormMain());
         }
