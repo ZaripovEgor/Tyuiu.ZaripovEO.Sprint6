@@ -29,7 +29,7 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task0.V22
             DataService ds = new DataService();
             try
             {
-                textBoxRes.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarA.Text)));
+                textBoxRes_ZEO.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarA_ZEO.Text)));
             }
             catch
             {
