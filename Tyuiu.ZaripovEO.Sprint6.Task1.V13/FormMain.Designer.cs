@@ -193,6 +193,8 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task1.V13
             this.Controls.Add(this.groupBoxOutPut_ZEO);
             this.Controls.Add(this.groupBoxInPut__ZEO);
             this.Controls.Add(this.groupBoxTask_ZEO);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "FormMain";
             this.Text = "Спринт 6 | Таск 1 | Вариант 0 | Спирин И. С.";
             this.groupBoxTask_ZEO.ResumeLayout(false);
