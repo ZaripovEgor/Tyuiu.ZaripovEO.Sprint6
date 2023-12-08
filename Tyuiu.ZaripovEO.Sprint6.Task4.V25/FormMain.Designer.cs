@@ -29,10 +29,10 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.groupBoxOutPut_ZEO = new System.Windows.Forms.GroupBox();
             this.textBoxOutPut_ZEO = new System.Windows.Forms.TextBox();
             this.groupBoxTask_ZEO = new System.Windows.Forms.GroupBox();
@@ -143,6 +143,8 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
             this.buttonDoIt_ZEO.Text = "Выполнить";
             this.buttonDoIt_ZEO.UseVisualStyleBackColor = false;
             this.buttonDoIt_ZEO.Click += new System.EventHandler(this.buttonDoIt_ZEO_Click);
+            this.buttonDoIt_ZEO.MouseEnter += new System.EventHandler(this.buttonDoIt_ZEO_MouseEnter);
+            this.buttonDoIt_ZEO.MouseLeave += new System.EventHandler(this.buttonDoIt_ZEO_MouseLeave);
             // 
             // buttonSave_ZEO
             // 
@@ -155,6 +157,7 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
             this.buttonSave_ZEO.UseVisualStyleBackColor = false;
             this.buttonSave_ZEO.Click += new System.EventHandler(this.buttonSave_ZEO_Click);
             this.buttonSave_ZEO.MouseEnter += new System.EventHandler(this.buttonSave_ZEO_MouseEnter);
+            this.buttonSave_ZEO.MouseLeave += new System.EventHandler(this.buttonSave_ZEO_MouseLeave);
             // 
             // buttonHelp_ZEO
             // 
@@ -167,30 +170,33 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
             this.buttonHelp_ZEO.Text = "Справка";
             this.buttonHelp_ZEO.UseVisualStyleBackColor = false;
             this.buttonHelp_ZEO.Click += new System.EventHandler(this.buttonHelp_ZEO_Click);
+            this.buttonHelp_ZEO.MouseEnter += new System.EventHandler(this.buttonHelp_ZEO_MouseEnter);
+            this.buttonHelp_ZEO.MouseLeave += new System.EventHandler(this.buttonHelp_ZEO_MouseLeave);
             // 
             // chartFunc_ZEO
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartFunc_ZEO.ChartAreas.Add(chartArea5);
+            chartArea1.Name = "ChartArea1";
+            this.chartFunc_ZEO.ChartAreas.Add(chartArea1);
             this.chartFunc_ZEO.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend5.Name = "Legend1";
-            this.chartFunc_ZEO.Legends.Add(legend5);
+            legend1.Name = "Legend1";
+            this.chartFunc_ZEO.Legends.Add(legend1);
             this.chartFunc_ZEO.Location = new System.Drawing.Point(0, 0);
             this.chartFunc_ZEO.Name = "chartFunc_ZEO";
-            series5.BorderWidth = 2;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartFunc_ZEO.Series.Add(series5);
+            series1.BorderWidth = 2;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFunc_ZEO.Series.Add(series1);
             this.chartFunc_ZEO.Size = new System.Drawing.Size(725, 431);
             this.chartFunc_ZEO.TabIndex = 3;
             this.chartFunc_ZEO.Text = "chart1";
-            title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            title5.ForeColor = System.Drawing.Color.DodgerBlue;
-            title5.Name = "Title1";
-            title5.Text = "График функции";
-            this.chartFunc_ZEO.Titles.Add(title5);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            title1.ForeColor = System.Drawing.Color.DodgerBlue;
+            title1.Name = "Title1";
+            title1.Text = "График функции";
+            this.chartFunc_ZEO.Titles.Add(title1);
             this.chartFunc_ZEO.Click += new System.EventHandler(this.chartFunc_ZEO_Click);
             // 
             // panel1

@@ -92,12 +92,37 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
 
         private void buttonSave_ZEO_MouseEnter(object sender, EventArgs e)
         {
-            //
+            this.Cursor = Cursors.Hand;
         }
 
         private void buttonHelp_ZEO_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 4 выполнил студент группы ИСТНб-23-1 \n Зарипов Егор Олегович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void buttonDoIt_ZEO_MouseEnter(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void buttonDoIt_ZEO_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Default;
+        }
+
+        private void buttonSave_ZEO_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Default;
+        }
+
+        private void buttonHelp_ZEO_MouseEnter(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void buttonHelp_ZEO_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Default;
         }
     }
 }
