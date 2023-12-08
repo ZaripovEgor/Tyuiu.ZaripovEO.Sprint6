@@ -59,7 +59,7 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task3.V23
 
         private void buttonHelp_ZEO_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 2 выполнил студент группы ИСТНб-23-1 \n Зарипов Егор Олегович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 3 выполнил студент группы ИСТНб-23-1 \n Зарипов Егор Олегович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
     }
