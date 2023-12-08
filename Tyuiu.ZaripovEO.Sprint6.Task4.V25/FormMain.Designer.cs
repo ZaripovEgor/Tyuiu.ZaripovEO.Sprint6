@@ -36,11 +36,12 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
             this.groupBoxOutPut_ZEO = new System.Windows.Forms.GroupBox();
             this.textBoxOutPut_ZEO = new System.Windows.Forms.TextBox();
             this.groupBoxTask_ZEO = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBoxInPut_ZEO = new System.Windows.Forms.GroupBox();
-            this.textBoxStart_ZEO = new System.Windows.Forms.TextBox();
-            this.textBoxStop_ZEO = new System.Windows.Forms.TextBox();
-            this.labelStart_ZEO = new System.Windows.Forms.Label();
             this.labelStop_ZEO = new System.Windows.Forms.Label();
+            this.labelStart_ZEO = new System.Windows.Forms.Label();
+            this.textBoxStop_ZEO = new System.Windows.Forms.TextBox();
+            this.textBoxStart_ZEO = new System.Windows.Forms.TextBox();
             this.buttonDoIt_ZEO = new System.Windows.Forms.Button();
             this.buttonSave_ZEO = new System.Windows.Forms.Button();
             this.buttonHelp_ZEO = new System.Windows.Forms.Button();
@@ -48,7 +49,6 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBoxOutPut_ZEO.SuspendLayout();
             this.groupBoxTask_ZEO.SuspendLayout();
             this.groupBoxInPut_ZEO.SuspendLayout();
@@ -88,6 +88,20 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
             this.groupBoxTask_ZEO.TabStop = false;
             this.groupBoxTask_ZEO.Text = "Условие:";
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(0, 19);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(410, 53);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Протабулируйте функцию на заданном диапазоне от -5 до 5.\r\nРезультат вывести в tex" +
+    "tBox, построить график функции и сохранить в файл\r\nOutPutFileTask.txt по нажатию" +
+    " кнопки.\r\n";
+            // 
             // groupBoxInPut_ZEO
             // 
             this.groupBoxInPut_ZEO.Controls.Add(this.labelStop_ZEO);
@@ -101,19 +115,14 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
             this.groupBoxInPut_ZEO.TabStop = false;
             this.groupBoxInPut_ZEO.Text = "Ввод данных:";
             // 
-            // textBoxStart_ZEO
+            // labelStop_ZEO
             // 
-            this.textBoxStart_ZEO.Location = new System.Drawing.Point(7, 38);
-            this.textBoxStart_ZEO.Name = "textBoxStart_ZEO";
-            this.textBoxStart_ZEO.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStart_ZEO.TabIndex = 0;
-            // 
-            // textBoxStop_ZEO
-            // 
-            this.textBoxStop_ZEO.Location = new System.Drawing.Point(162, 38);
-            this.textBoxStop_ZEO.Name = "textBoxStop_ZEO";
-            this.textBoxStop_ZEO.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStop_ZEO.TabIndex = 0;
+            this.labelStop_ZEO.AutoSize = true;
+            this.labelStop_ZEO.Location = new System.Drawing.Point(159, 22);
+            this.labelStop_ZEO.Name = "labelStop_ZEO";
+            this.labelStop_ZEO.Size = new System.Drawing.Size(69, 13);
+            this.labelStop_ZEO.TabIndex = 1;
+            this.labelStop_ZEO.Text = "Конец шага:";
             // 
             // labelStart_ZEO
             // 
@@ -124,14 +133,19 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
             this.labelStart_ZEO.TabIndex = 1;
             this.labelStart_ZEO.Text = "Старт шага:";
             // 
-            // labelStop_ZEO
+            // textBoxStop_ZEO
             // 
-            this.labelStop_ZEO.AutoSize = true;
-            this.labelStop_ZEO.Location = new System.Drawing.Point(159, 22);
-            this.labelStop_ZEO.Name = "labelStop_ZEO";
-            this.labelStop_ZEO.Size = new System.Drawing.Size(69, 13);
-            this.labelStop_ZEO.TabIndex = 1;
-            this.labelStop_ZEO.Text = "Конец шага:";
+            this.textBoxStop_ZEO.Location = new System.Drawing.Point(162, 38);
+            this.textBoxStop_ZEO.Name = "textBoxStop_ZEO";
+            this.textBoxStop_ZEO.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStop_ZEO.TabIndex = 0;
+            // 
+            // textBoxStart_ZEO
+            // 
+            this.textBoxStart_ZEO.Location = new System.Drawing.Point(7, 38);
+            this.textBoxStart_ZEO.Name = "textBoxStart_ZEO";
+            this.textBoxStart_ZEO.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStart_ZEO.TabIndex = 0;
             // 
             // buttonDoIt_ZEO
             // 
@@ -226,20 +240,6 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
             this.panel3.TabIndex = 6;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(0, 19);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(410, 53);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Протабулируйте функцию на заданном диапазоне от -5 до 5.\r\nРезультат вывести в tex" +
-    "tBox, построить график функции и сохранить в файл\r\nOutPutFileTask.txt по нажатию" +
-    " кнопки.\r\n";
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,7 +256,7 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task4.V25
             this.MinimumSize = new System.Drawing.Size(976, 570);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Спринт 6 | Таск 4 | Вариант 25 | Зарипов Е. О.";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBoxOutPut_ZEO.ResumeLayout(false);
             this.groupBoxOutPut_ZEO.PerformLayout();
