@@ -32,9 +32,9 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task7.V6.Lib
 
             for (int r = 0; r < columns; r++)
             {
-                if (arrayValues[7, r] != 6)
+                if (arrayValues[6, r] != 6)
                 {
-                    arrayValues[7, r] = 0;
+                    arrayValues[6, r] = 0;
                 }
             }
             return arrayValues;
