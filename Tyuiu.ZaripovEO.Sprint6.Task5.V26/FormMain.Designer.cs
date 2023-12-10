@@ -29,9 +29,9 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task5.V26
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonHelp_ZEO = new System.Windows.Forms.Button();
             this.buttonOpen_ZEO = new System.Windows.Forms.Button();
@@ -113,7 +113,7 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task5.V26
             this.textBoxTask_ZEO.Multiline = true;
             this.textBoxTask_ZEO.Name = "textBoxTask_ZEO";
             this.textBoxTask_ZEO.Size = new System.Drawing.Size(394, 55);
-            this.textBoxTask_ZEO.TabIndex = 0;
+            this.textBoxTask_ZEO.TabIndex = 1;
             this.textBoxTask_ZEO.Text = "Прочитать данные из файла InPutFileTask5.txt. Вывести в dataGridView\r\nположительн" +
     "ые значения и построить диаграму по этим значениям.\r\n";
             // 
@@ -129,10 +129,12 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task5.V26
             // dataGridViewOutPut_ZEO
             // 
             this.dataGridViewOutPut_ZEO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOutPut_ZEO.ColumnHeadersVisible = false;
             this.dataGridViewOutPut_ZEO.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewOutPut_ZEO.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewOutPut_ZEO.Name = "dataGridViewOutPut_ZEO";
             this.dataGridViewOutPut_ZEO.ReadOnly = true;
+            this.dataGridViewOutPut_ZEO.RowHeadersVisible = false;
             this.dataGridViewOutPut_ZEO.Size = new System.Drawing.Size(194, 350);
             this.dataGridViewOutPut_ZEO.TabIndex = 0;
             // 
@@ -147,19 +149,19 @@ namespace Tyuiu.ZaripovEO.Sprint6.Task5.V26
             // 
             // chartFunc_ZEO
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartFunc_ZEO.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chartFunc_ZEO.ChartAreas.Add(chartArea2);
             this.chartFunc_ZEO.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chartFunc_ZEO.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.chartFunc_ZEO.Legends.Add(legend2);
             this.chartFunc_ZEO.Location = new System.Drawing.Point(0, 0);
             this.chartFunc_ZEO.Name = "chartFunc_ZEO";
-            series1.ChartArea = "ChartArea1";
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartFunc_ZEO.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartFunc_ZEO.Series.Add(series2);
             this.chartFunc_ZEO.Size = new System.Drawing.Size(499, 350);
             this.chartFunc_ZEO.TabIndex = 0;
             this.chartFunc_ZEO.Text = "chart1";
